@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChiTietPhong"
+    android:background="#4B8BEC"
+    android:padding="10dp">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Chi tiết phòng"
+    android:layout_gravity="center"
+    android:textSize="30dp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Người thuê: "
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtNguoiThue"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_sua"
+                android:layout_width="75dp"
+                android:layout_height="45dp"
+                android:text="Sửa" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Số điện: "
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtSoDien"
+                android:layout_width="150dp"
+                android:inputType="number"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Số nước: "
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/edtSoNuoc"
+                android:inputType="number"
+
+                android:layout_width="180dp"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TextView
+            android:id="@+id/tvTongTien"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#B51212"
+            android:textSize="25sp" />
+
+        <TableRow
+            android:layout_width="320dp"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnTinhTien"
+                android:text="Tính tiền" />
+
+            <Button
+                android:id="@+id/btnXong"
+                android:layout_width="191dp"
+                android:layout_height="wrap_content"
+                android:text="Xong"
+                android:textAlignment="center" />
+        </TableRow>
+
+            <Button
+                android:text="Gửi thông báo"
+                android:id="@+id/btnThongbao"/>
+
+
+    </TableLayout>
+
+</LinearLayout>
